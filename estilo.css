@@ -1,5 +1,5 @@
 body {
-  background: #0b5ab4 url(imagens/fundo.jpg);
+  background: #0b5ab4 url(imagens/fundo.jpg) fixed;
   margin: 0px;
   padding: 0px;
   font-family: "DejaVu Sans", Verdana, sans-serif;
@@ -67,7 +67,7 @@ a:visited { color: #474FA4; }
   padding: 8px 0px 5px 0px;
   display: inline;
   background-color: #ccc;
-  #background: #FFF url(imagens/nav.gif) no-repeat;#
+  /* background: #FFF url(imagens/nav.gif) no-repeat; */
   border: 1px solid #FFF;
   -moz-border-radius: 10px 10px 0px 0px;
   border-radius: 10px 10px 0px 0px;
@@ -99,6 +99,9 @@ a:visited { color: #474FA4; }
 #corpo #conteudo {
   vertical-align: top;
   width: 60%;
+}
+#corpo #conteudo ul {
+	list-style-type: none;
 }
 #corpo #int {
   width: 100%;
@@ -142,6 +145,7 @@ a:visited { color: #474FA4; }
 }
 #corpo #bandeja table tr:hover {
   background-color: #B2D0F2;
+  background: -moz-linear-gradient(top right, #B2D0F2, #FFF);
 }
 /*#corpo #bandeja table td:hover {
   background-color: #4F4BCF;
