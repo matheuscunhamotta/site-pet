@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Matheus" />
+<title>Grupo PET-Matemática - UFCG</title>
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+<!-- Scripts do Fancybox -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script>
+    !window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+</script>
+<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("a[rel=grupo_1]").fancybox({
+        'transitionIn'		: 'elastic',
+        'transitionOut'		: 'elastic',
+        'titlePosition' 	: 'over',
+        'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+          return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+        }
+      });
+    });
+</script>
+</head>
+<body>
+
+<div id="cabecalho">
+<a href="http://www.ufcg.edu.br/"><img id="l_ufcg" src="imagens/logo_ufcg.png" width="150" height="149" alt="Logo UFCG" /></a>
+<a href="http://www.dme.ufcg.edu.br/pet/"><img id="l_dme" src="imagens/logo_pet.jpg" width="163" height="115" alt="Logo DME" /></a>
+<h1>Grupo PET-Matemática UFCG</h1>
+<h3>Universidade Federal de Campina Grande</h3>
+</div>
+
+<div id="nav">
+<ul>
+  <li><a href="index.html">Inicio</a></li>
+  <li id="n-ativo"><a href="atividades.html">Atividades</a></li>
+  <li><a href="integrantes.html">Integrantes</a></li>
+  <li><a href="material.html">Material</a></li>
+  <li><a href="namidia.html">Na Mídia</a></li>
+  <li><a href="contato.html">Contato</a></li>
+</ul>
+</div>
+
+<div id="corpo">
+<table border=0>
+<tr>
+<!-- Conteudo aqui -->
+<td id="conteudo">
+<p>Clique para ampliar.</p>
+<ul>
+
+<li>
+<a name="papmem-00-janeiro-2014"></a><h3>PAPMEM - Programa de Aperfeiçoamento para Professores de
+Matemática do Ensino Médio, realizado em Janeiro de 2014 na Universidade
+Federal de Campina Grande.</h3>
+<ul class="fotos">
+<li><a rel="grupo_1" href="arquivos/eventos/2014_janeiro_00_papmem_1.jpg" title="Papmem"><img alt="Papmem" src="arquivos/eventos/miniaturas/2014_janeiro_00_papmem_1_miniatura.jpg" /></a></li>
+<li><a rel="grupo_1" href="arquivos/eventos/2014_janeiro_00_papmem_2.jpg" title="Papmem"><img alt="Papmem" src="arquivos/eventos/miniaturas/2014_janeiro_00_papmem_2_miniatura.jpg" /></a></li>
+<li><a rel="grupo_1" href="arquivos/eventos/2014_janeiro_00_papmem_3.jpg" title="Papmem"><img alt="Papmem" src="arquivos/eventos/miniaturas/2014_janeiro_00_papmem_3_miniatura.jpg" /></a></li>
+</ul>
+</li>
+
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="rodape">
+2014 - Grupo PET-Matemática UFCG.
+</div>
+</body>
+</html>
